@@ -4,11 +4,11 @@
 #include "common.h"
 
 #define GROW_CAPACITY(capacity) \
-    ((capacity) < 8 ? 8 : (capacity) * 2)
+    ((capacity) < 8 ? 8 : (capacity)*2)
 
-#define GROW_ARRAY(type, pionter, oldCount, newCount) \
-    (type*)reallocate(pionter, sizeof(type) * (oldCount), \
-            sizeof(type) * (newCount))
+#define GROW_ARRAY(type, pionter, oldCount, newCount)      \
+    (type *)reallocate(pionter, sizeof(type) * (oldCount), \
+                       sizeof(type) * (newCount))
 
 #define FREE_ARRAY(type, pionter, oldCount) \
     reallocate(pionter, sizeof(type) * (oldCount), 0)
