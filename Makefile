@@ -1,7 +1,7 @@
 CC=gcc
 CLFAGS=
 
-OBJ=main.o chunk.o memory.o debug.o value.o vm.o
+OBJ=main.o chunk.o memory.o debug.o value.o vm.o scanner.o compiler.o
 
 %.o: %.c
 	$(CC) $(CLAGS) -c -o $@ $<
