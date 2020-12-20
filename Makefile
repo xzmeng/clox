@@ -3,7 +3,7 @@ CLFAGS=
 
 OBJ=main.o chunk.o memory.o debug.o value.o vm.o scanner.o compiler.o
 
-%.o: %.c
+%.o: %.c *.h
 	$(CC) $(CLAGS) -c -o $@ $<
 
 main: $(OBJ)
