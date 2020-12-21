@@ -53,7 +53,7 @@ ObjString *takeString(const char *chars, int length)
 
     if (interned != NULL)
     {
-        FREE_ARRAY(char, chars, length + 1);
+        FREE_ARRAY(char, (void*)chars, length + 1);
         return interned;
     }
 
