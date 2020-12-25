@@ -8,7 +8,7 @@ Features
 - Lexical scope
 - Class and inheritance
 - First-class function and closure
-- Tree-walk interpreter
+- Bytecode virtual machine
 
 Roadmaps
 --------
